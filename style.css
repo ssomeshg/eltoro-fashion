@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color :#232323;
+    --secondary-color: #da0a22;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins", sans-serif !important;
+  color: var(--primary-color);
+}
+body {
+  font-family: "poppins", sans-serif !important;
+  color:var(--primary-color);
+  -webkit-text-size-adjust: 100%;
+}
+.text-justify{
+    text-align: justify;
+}
+.heading{
+    font-family: "poppins", sans-serif !important;
+    font-size: xx-large;
+    font-weight: 700; 
+    color: var(--primary-color);
+}
+
+.heading span{
+    position: absolute;
+    font-family: "Pacifico", cursive !important;
+    font-size: 70px;
+    font-weight: 900;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    z-index: -10;
+    color: #a1a1a15a;
+    letter-spacing: 10px;
+}
+.sub-head {
+  font-family: "Pacifico", cursive !important;
+  color:var(--secondary-color);
+  margin-bottom: 0;
+  font-size: x-large;
+}
+
+/* Features CSS */
+.featured-deatil{
+    display: grid;
+    grid-gap: 40px;
+}
+.bg-feature{
+    background: url(./assets/lines.png);
+    background-repeat: repeat;
+}
+.feature-item{
+    display: flex;
+    gap: 10px;
+}
+.feature-icon img{
+    width: 80px;
+    height: auto;
+}
+.feature-details h6{
+    font-weight: bold;
+}
+.feature-details p{
+    font-size: 14px;
+}
+.feature-details a{
+    position: relative;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    color: var(--primary-color);
+    transform: translateX(-10px);
+}
+
+.feature-details a::after{
+    content: " ";
+    overflow: hidden; 
+    width: 100%;
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    transition: all 0.2s linear;
+    transform: translateX(-10px);
+}
+.feature-details a:hover{
+    color: var(--secondary-color);
+    border-bottom: none;
+    transition: all 0.2s linear;
+    transform: translateX(-10px);
+}
+.feature-details a:hover:after{
+    content: "→ ";
+    width: 100%;
+    color: var(--secondary-color);
+    position: absolute;
+    left: 90px;
+    bottom: 0;
+    top: 0px;
+    transition: all 0.2s linear;
+    transform: translateX(0px);
+}
+
+/* About CSS */
+
+.about-section{
+    background-color: #f9f9f9;
+}
+
+ul li{
+    list-style: disc;
+}
+
+/* offer CSS */
+.offer-section h2{
+    color: rgb(191, 191, 191);
+}
+.offer-section{
+    background-color: black;
+    margin: auto 0;
+    color: white;
+}
+
+/* Forms Css */
+
+.design-form{
+   position: relative;
+    border-radius: 20px;
+    border: 2px dashed rgb(130, 130, 130);
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
+}
+input[type="file"]{
+    height: 50px;
+    padding: 100px;
+    opacity: 0;
+   z-index: 10;
+
+}
+.design-form .point{
+    position: absolute;
+    z-index: -10px;
+    top: 50%;
+    display: grid;
+    justify-items: center;
+    grid-gap: 10px;
+    transform: translateY(-50%);
+}
+.point h5{
+    color: gray;
+    text-transform: uppercase;
+}
+
+input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(11, 11, 11, 0.665);
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: smaller;
+    color: rgba(128, 128, 128, 0.733);
+}
+select{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(11, 11, 11, 0.665);
+}
+select:focus{
+    outline: none;
+}
+
+/* Deliver */
+
+.del-text{
+    color: rgb(191, 191, 191);
+    font-weight: 700;
+    margin-top: 12px;
+}
